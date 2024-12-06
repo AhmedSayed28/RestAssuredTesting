@@ -11,7 +11,9 @@ public class RegisterTest {
     public void TC_001(){
         given().baseUri("https://dummyjson.com/")
                .when().get("todos")
-               .then().log().all();
+               .then().log().all()
+                .assertThat().statusCode(200)
+                .assertThat().body("todos[0].id",equalTo(1));
 
 
     }
