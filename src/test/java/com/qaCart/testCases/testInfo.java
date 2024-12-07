@@ -4,16 +4,27 @@ import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import org.testng.annotations.Test;
 
+import javax.naming.ldap.HasControls;
+
+import java.util.HashMap;
+
 import static io.restassured.RestAssured.*;
 
 public class testInfo {
     @Test
     public void getCoursesInfo(){
 
-        Header typeHeader = new Header("type","WEB");
-        Header langHeader = new Header("language","JAVA");
+        HashMap<String,String> infoHeaders = new HashMap<>();
+        infoHeaders.put("type","WEB");
+        infoHeaders.put("language","JAVA");
 
-        Headers infoHeaders = new Headers(typeHeader,langHeader);
+
+
+
+//        Header typeHeader = new Header("type","WEB");
+//        Header langHeader = new Header("language","JAVA");
+//
+//        Headers infoHeaders = new Headers(typeHeader,langHeader);
 
         given()
                 .baseUri("https://todo.qacart.com/")
