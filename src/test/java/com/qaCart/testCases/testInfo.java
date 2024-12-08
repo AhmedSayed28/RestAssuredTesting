@@ -5,8 +5,10 @@ import com.google.gson.Gson;
 import com.qaCart.testCases.pojo.loginPojo;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
+import io.restassured.specification.RequestSpecification;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import javax.naming.ldap.HasControls;
@@ -19,8 +21,13 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class testInfo {
-
-
+    RequestSpecification req;
+    @BeforeClass
+    public void before(){
+        req = given()
+                .baseUri("https://todo.qacart.com/")
+                .header("Content-Type","application/json");
+    }
 
 
     @Test
@@ -30,13 +37,9 @@ public class testInfo {
         infoHeaders.put("type","WEB");
         infoHeaders.put("language","JAVA");
 
-//        Header typeHeader = new Header("type","WEB");
-//        Header langHeader = new Header("language","JAVA");
-//
-//        Headers infoHeaders = new Headers(typeHeader,langHeader);
 
         given()
-                .baseUri("https://todo.qacart.com/")
+                .spec(req)
                 .headers(infoHeaders).log().all()
         .when().get("api/v1/info/courses")
         .then().log().ifError()
@@ -54,8 +57,7 @@ public class testInfo {
 
 
         given()
-                .baseUri("https://todo.qacart.com/")
-                .header("Content-Type","application/json")
+                .spec(req)
                 .body(user)
                 .when()
                 .post("api/v1/students/login")

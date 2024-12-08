@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e220e02-8107-4f2c-bcda-3fea0df33dab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaCart/testCases/data/userData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaCart/testCases/pojo/loginPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaCart/testCases/pojo/loginPojo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaCart/testCases/testInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaCart/testCases/testInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
