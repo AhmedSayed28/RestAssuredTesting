@@ -1,5 +1,6 @@
 package com.qaCart.testCases;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.qaCart.testCases.pojo.loginPojo;
 import io.restassured.http.Header;
@@ -10,6 +11,8 @@ import org.testng.annotations.Test;
 
 import javax.naming.ldap.HasControls;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.*;
@@ -42,8 +45,12 @@ public class testInfo {
     }
 
     @Test
-    public void loginTest(){
-        loginPojo user = new loginPojo("hatem@example.com","123456");
+    public void loginTest() throws IOException {
+        File data = new File("src/test/java/com/qaCart/testCases/data/userData.json");
+
+        ObjectMapper mapper = new ObjectMapper();
+        loginPojo user = mapper.readValue(data,loginPojo.class);
+        System.out.println(user);
 
 
         given()
@@ -51,7 +58,7 @@ public class testInfo {
                 .header("Content-Type","application/json")
                 .body(user)
                 .when()
-                .get("api/v1/students/login")
+                .post("api/v1/students/login")
                 .then().log().all();
     }
 }

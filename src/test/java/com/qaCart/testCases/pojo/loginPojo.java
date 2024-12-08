@@ -1,10 +1,12 @@
 package com.qaCart.testCases.pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.*;
 
 @Data
-@AllArgsConstructor
+@AllArgsConstructor // ينشئ Constructor يحتوي على كل الحقول
+@NoArgsConstructor  // ينشئ Constructor بدون أي معاملات
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class loginPojo {
     private String email;
     private String password;
