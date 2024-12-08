@@ -49,12 +49,38 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.RegisterTest.executor": "Run",
     "TestNG.testInfo.executor": "Run",
+    "TestNG.testInfo.loginTest.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="testInfo.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaCart.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaCart.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.qaCart.testCases.testInfo" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.testInfo.loginTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
