@@ -24,6 +24,7 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+@Listeners(com.listeners.MyListeners.class)
 public class testInfo {
     RequestSpecification req;
     @BeforeClass
