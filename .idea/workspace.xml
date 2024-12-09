@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e220e02-8107-4f2c-bcda-3fea0df33dab" name="Changes" comment="">
+    <list default="true" id="0e220e02-8107-4f2c-bcda-3fea0df33dab" name="Changes" comment="Fix code issue in the XML file">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/utils/ExtentReportManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/listeners/MyListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/listeners/MyListeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaCart/testCases/testInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaCart/testCases/testInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,9 @@
     &quot;accountId&quot;: &quot;1023fb67-d9e1-4255-a3a2-824055ae9a47&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -95,6 +98,47 @@
       <option name="presentableId" value="Default" />
       <updated>1733485265878</updated>
     </task>
+    <task id="LOCAL-00001" summary="Integrate the listener class with the test cases class throughout the XML File">
+      <option name="closed" value="true" />
+      <created>1733785347802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733785347802</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Integrate the listener class with the test cases class throughout the TestNG annotation in the same class for simplicity">
+      <option name="closed" value="true" />
+      <created>1733785405892</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733785405892</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Remove unused statements">
+      <option name="closed" value="true" />
+      <created>1733785490762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733785490762</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add some enhancement">
+      <option name="closed" value="true" />
+      <created>1733785536895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733785536895</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix code issue in the XML file">
+      <option name="closed" value="true" />
+      <created>1733785565731</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733785565731</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,5 +151,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init the listener class and extract the response message" />
+    <MESSAGE value="Integrate the listener class with the test cases class throughout the XML File" />
+    <MESSAGE value="Integrate the listener class with the test cases class throughout the TestNG annotation in the same class for simplicity" />
+    <MESSAGE value="Remove unused statements" />
+    <MESSAGE value="Add some enhancement" />
+    <MESSAGE value="Fix code issue in the XML file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix code issue in the XML file" />
   </component>
 </project>
