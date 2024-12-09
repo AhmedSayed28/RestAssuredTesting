@@ -16,7 +16,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 @Listeners(com.listeners.MyListeners.class)
-public class testInfo {
+public class TestInfo {
     RequestSpecification req;
     @BeforeClass
     public void before(){

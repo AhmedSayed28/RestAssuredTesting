@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="com.listeners.MyListeners"/>
     </listeners>
-    <test verbose="2" preserve-order="true"
+    <test verbose="2"
           name="C:/Users/user/Downloads/RestAssuredTesting/src/test/java/com/qaCart/testCases/testInfo.java">
         <classes>
             <class name="com.qaCart.testCases.testInfo">
