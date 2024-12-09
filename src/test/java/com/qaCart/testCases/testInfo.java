@@ -1,21 +1,12 @@
 package com.qaCart.testCases;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
-import com.listeners.MyListeners;
 import com.qaCart.testCases.pojo.loginPojo;
-import io.restassured.http.Header;
-import io.restassured.http.Headers;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import javax.naming.ldap.HasControls;
 
 import java.io.File;
 import java.io.IOException;
