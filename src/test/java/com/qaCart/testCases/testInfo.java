@@ -12,6 +12,7 @@ import io.restassured.specification.RequestSpecification;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import javax.naming.ldap.HasControls;
@@ -23,7 +24,7 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class testInfo extends MyListeners {
+public class testInfo {
     RequestSpecification req;
     @BeforeClass
     public void before(){
@@ -32,7 +33,6 @@ public class testInfo extends MyListeners {
                 .header("Content-Type","application/json");
     }
 
-    MyListeners listener = new MyListeners();
     @Test
     public void getCoursesInfo(){
 
@@ -43,7 +43,7 @@ public class testInfo extends MyListeners {
 
         given()
                 .spec(req)
-                .headers(infoHeaders).log().all()
+                .headers(infoHeaders)
         .when().get("api/v1/info/courses")
         .then().log().ifError()
                 .assertThat().statusCode(200).
