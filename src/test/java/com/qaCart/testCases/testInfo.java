@@ -2,9 +2,12 @@ package com.qaCart.testCases;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import com.listeners.MyListeners;
 import com.qaCart.testCases.pojo.loginPojo;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,7 +23,7 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class testInfo {
+public class testInfo extends MyListeners {
     RequestSpecification req;
     @BeforeClass
     public void before(){
@@ -29,7 +32,7 @@ public class testInfo {
                 .header("Content-Type","application/json");
     }
 
-
+    MyListeners listener = new MyListeners();
     @Test
     public void getCoursesInfo(){
 
@@ -56,11 +59,14 @@ public class testInfo {
         System.out.println(user);
 
 
-        given()
+        Response res = given()
                 .spec(req)
                 .body(user)
                 .when()
                 .post("api/v1/students/login")
-                .then().log().all();
+                .then().extract().response();
+
+        String resp = JsonPath.from(res.asString()).getString("message");
+        System.out.println(resp);
     }
 }
