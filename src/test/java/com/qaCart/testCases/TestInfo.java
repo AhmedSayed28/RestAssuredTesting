@@ -15,7 +15,7 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-@Listeners(com.listeners.MyListeners.class)
+@Listeners(com.utils.ExtentReportManager.class)
 public class TestInfo {
     RequestSpecification req;
     @BeforeClass
@@ -36,7 +36,7 @@ public class TestInfo {
         given()
                 .spec(req)
                 .headers(infoHeaders)
-        .when().get("api/v1/info/courses")
+        .when().get("api/v1/infoo/courses")
         .then().log().ifError()
                 .assertThat().statusCode(200).
                 assertThat().body("count",equalTo(1));

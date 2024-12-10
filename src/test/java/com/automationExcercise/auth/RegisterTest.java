@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import io.restassured.response.Response;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -13,6 +14,7 @@ public class RegisterTest {
 
     @Data
     @AllArgsConstructor
+    @NoArgsConstructor
     static class User {
         private String name;
         private String email;

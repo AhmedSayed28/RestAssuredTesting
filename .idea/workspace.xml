@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e220e02-8107-4f2c-bcda-3fea0df33dab" name="Changes" comment="Fix code issue in the XML file">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/utils/ExtentReportManager.java" afterDir="false" />
+    <list default="true" id="0e220e02-8107-4f2c-bcda-3fea0df33dab" name="Changes" comment="Import the dependancies of the reporter and init it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automationExcercise/auth/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationExcercise/auth/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaCart/testCases/TestInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaCart/testCases/TestInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/utils/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/utils/ExtentReportManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automationExcercise/auth/RegisterTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.C:/Users/user/Downloads/RestAssuredTesting/testng.xml.executor": "Run",
     "TestNG.RegisterTest.executor": "Run",
+    "TestNG.TestInfo.executor": "Run",
     "TestNG.testInfo.executor": "Run",
     "TestNG.testInfo.loginTest.executor": "Run",
     "git-widget-placeholder": "main",
@@ -138,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733785565731</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Import the dependancies of the reporter and init it">
+      <option name="closed" value="true" />
+      <created>1733786698892</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733786698892</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +170,7 @@
     <MESSAGE value="Remove unused statements" />
     <MESSAGE value="Add some enhancement" />
     <MESSAGE value="Fix code issue in the XML file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix code issue in the XML file" />
+    <MESSAGE value="Import the dependancies of the reporter and init it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Import the dependancies of the reporter and init it" />
   </component>
 </project>
